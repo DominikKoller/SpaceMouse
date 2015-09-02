@@ -1,0 +1,1180 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "AngleAxis",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [],
+      "DotNetName": "TDx.TDxInput.AngleAxis"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "AngleAxisClass",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Angle"
+          },
+          "DotNetName": "Angle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "X"
+          },
+          "DotNetName": "X"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Y"
+          },
+          "DotNetName": "Y"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Z"
+          },
+          "DotNetName": "Z"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.AngleAxisClass"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Device",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [],
+      "DotNetName": "TDx.TDxInput.Device"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "DeviceClass",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Connect"
+          },
+          "DotNetName": "Connect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Disconnect"
+          },
+          "DotNetName": "Disconnect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsConnected"
+          },
+          "DotNetName": "IsConnected"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Keyboard"
+          },
+          "DotNetName": "Keyboard"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "LoadPreferences"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "PreferencesName"
+            }
+          ],
+          "DotNetName": "LoadPreferences"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Sensor"
+          },
+          "DotNetName": "Sensor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type"
+          },
+          "DotNetName": "Type"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "add_DeviceChange"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISimpleDeviceEvents_DeviceChangeEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_DeviceChange"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_DeviceChange"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISimpleDeviceEvents_DeviceChangeEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_DeviceChange"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.DeviceClass"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IAngleAxis",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Angle"
+          },
+          "DotNetName": "Angle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "X"
+          },
+          "DotNetName": "X"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Y"
+          },
+          "DotNetName": "Y"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Z"
+          },
+          "DotNetName": "Z"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.IAngleAxis"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IKeyboard",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Device"
+          },
+          "DotNetName": "Device"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetKeyLabel"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetKeyLabel"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetKeyName"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetKeyName"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsKeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsKeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsKeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsKeyUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Keys"
+          },
+          "DotNetName": "Keys"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ProgrammableKeys"
+          },
+          "DotNetName": "ProgrammableKeys"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.IKeyboard"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ISensor",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Device"
+          },
+          "DotNetName": "Device"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Period"
+          },
+          "DotNetName": "Period"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rotation"
+          },
+          "DotNetName": "Rotation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Translation"
+          },
+          "DotNetName": "Translation"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.ISensor"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ISimpleDevice",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Connect"
+          },
+          "DotNetName": "Connect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Disconnect"
+          },
+          "DotNetName": "Disconnect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsConnected"
+          },
+          "DotNetName": "IsConnected"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Keyboard"
+          },
+          "DotNetName": "Keyboard"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "LoadPreferences"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "PreferencesName"
+            }
+          ],
+          "DotNetName": "LoadPreferences"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Sensor"
+          },
+          "DotNetName": "Sensor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type"
+          },
+          "DotNetName": "Type"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.ISimpleDevice"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ITDxInfo",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "RevisionNumber"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RevisionNumber"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.ITDxInfo"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IVector3D",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Length"
+          },
+          "DotNetName": "Length"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "X"
+          },
+          "DotNetName": "X"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Y"
+          },
+          "DotNetName": "Y"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Z"
+          },
+          "DotNetName": "Z"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.IVector3D"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Keyboard",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [],
+      "DotNetName": "TDx.TDxInput.Keyboard"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyboardClass",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Device"
+          },
+          "DotNetName": "Device"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetKeyLabel"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetKeyLabel"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetKeyName"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetKeyName"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsKeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsKeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsKeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsKeyUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Keys"
+          },
+          "DotNetName": "Keys"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ProgrammableKeys"
+          },
+          "DotNetName": "ProgrammableKeys"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "add_KeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyDownEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_KeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "add_KeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyUpEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_KeyUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_KeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyDownEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_KeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_KeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyUpEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_KeyUp"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.KeyboardClass"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Sensor",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [],
+      "DotNetName": "TDx.TDxInput.Sensor"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SensorClass",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Device"
+          },
+          "DotNetName": "Device"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Period"
+          },
+          "DotNetName": "Period"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rotation"
+          },
+          "DotNetName": "Rotation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Translation"
+          },
+          "DotNetName": "Translation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "add_SensorInput"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISensorEvents_SensorInputEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_SensorInput"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_SensorInput"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISensorEvents_SensorInputEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_SensorInput"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.SensorClass"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TDxInfo",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [],
+      "DotNetName": "TDx.TDxInput.TDxInfo"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TDxInfoClass",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RevisionNumber"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RevisionNumber"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.TDxInfoClass"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Vector3D",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [],
+      "DotNetName": "TDx.TDxInput.Vector3D"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Vector3DClass",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Length"
+          },
+          "DotNetName": "Length"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "X"
+          },
+          "DotNetName": "X"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Y"
+          },
+          "DotNetName": "Y"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Z"
+          },
+          "DotNetName": "Z"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput.Vector3DClass"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_IKeyboardEvents",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "KeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "keyCode"
+            }
+          ],
+          "DotNetName": "KeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "KeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "keyCode"
+            }
+          ],
+          "DotNetName": "KeyUp"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._IKeyboardEvents"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_IKeyboardEvents_Event",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "add_KeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyDownEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_KeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "add_KeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyUpEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_KeyUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_KeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyDownEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_KeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_KeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._IKeyboardEvents_KeyUpEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_KeyUp"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._IKeyboardEvents_Event"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_IKeyboardEvents_KeyDownEventHandler",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Object",
+              "DotNetName": ""
+            },
+            {
+              "TypeFullName": "System.UIntPtr",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invoke"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "keyCode"
+            }
+          ],
+          "DotNetName": "Invoke"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._IKeyboardEvents_KeyDownEventHandler"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_IKeyboardEvents_KeyUpEventHandler",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Object",
+              "DotNetName": ""
+            },
+            {
+              "TypeFullName": "System.UIntPtr",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invoke"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "keyCode"
+            }
+          ],
+          "DotNetName": "Invoke"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._IKeyboardEvents_KeyUpEventHandler"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_IKeyboardEvents_SinkHelper",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "KeyDown"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "KeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "KeyUp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "KeyUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "m_KeyDownDelegate",
+            "ShowCategory": true
+          },
+          "DotNetName": "m_KeyDownDelegate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "m_KeyUpDelegate",
+            "ShowCategory": true
+          },
+          "DotNetName": "m_KeyUpDelegate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "m_dwCookie",
+            "ShowCategory": true
+          },
+          "DotNetName": "m_dwCookie"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._IKeyboardEvents_SinkHelper"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISensorEvents",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "SensorInput"
+          },
+          "DotNetName": "SensorInput"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISensorEvents"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISensorEvents_Event",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "add_SensorInput"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISensorEvents_SensorInputEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_SensorInput"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_SensorInput"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISensorEvents_SensorInputEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_SensorInput"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISensorEvents_Event"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISensorEvents_SensorInputEventHandler",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Object",
+              "DotNetName": ""
+            },
+            {
+              "TypeFullName": "System.UIntPtr",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invoke"
+          },
+          "DotNetName": "Invoke"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISensorEvents_SensorInputEventHandler"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISensorEvents_SinkHelper",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "SensorInput"
+          },
+          "DotNetName": "SensorInput"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "m_SensorInputDelegate",
+            "ShowCategory": true
+          },
+          "DotNetName": "m_SensorInputDelegate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "m_dwCookie",
+            "ShowCategory": true
+          },
+          "DotNetName": "m_dwCookie"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISensorEvents_SinkHelper"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISimpleDeviceEvents",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "DeviceChange"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "reserved"
+            }
+          ],
+          "DotNetName": "DeviceChange"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISimpleDeviceEvents"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISimpleDeviceEvents_DeviceChangeEventHandler",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Object",
+              "DotNetName": ""
+            },
+            {
+              "TypeFullName": "System.UIntPtr",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invoke"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "reserved"
+            }
+          ],
+          "DotNetName": "Invoke"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISimpleDeviceEvents_DeviceChangeEventHandler"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISimpleDeviceEvents_Event",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "add_DeviceChange"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISimpleDeviceEvents_DeviceChangeEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "add_DeviceChange"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "remove_DeviceChange"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDx.TDxInput._ISimpleDeviceEvents_DeviceChangeEventHandler",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "remove_DeviceChange"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISimpleDeviceEvents_Event"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "_ISimpleDeviceEvents_SinkHelper",
+        "Category": "TDx.TDxInput"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "DeviceChange"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": ""
+            }
+          ],
+          "DotNetName": "DeviceChange"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "m_DeviceChangeDelegate",
+            "ShowCategory": true
+          },
+          "DotNetName": "m_DeviceChangeDelegate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "m_dwCookie",
+            "ShowCategory": true
+          },
+          "DotNetName": "m_dwCookie"
+        }
+      ],
+      "DotNetName": "TDx.TDxInput._ISimpleDeviceEvents_SinkHelper"
+    }
+  ],
+  "DotNetName": "TDx.TDxInput, Version=1.2.15148.11091, Culture=neutral, PublicKeyToken=3bbf7d14b78dc9f5"
+}
