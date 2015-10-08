@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="D:\vvvv\sketchbook\SpaceMouse\vl\SpaceMouse (Devices VL) help.v4p" locked="0" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\SpaceMouse\vl\SpaceMouse (Devices VL) help.v4p" locked="0" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="1815" top="1380" width="12735" height="9390">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -137,7 +137,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.0047499998472631,0.0047499998472631,-0.00150000001303852">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.00800000037997961,0.0087500000372529,-0.00600000005215406">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
@@ -175,7 +175,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="240" top="6930" width="5685" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="19125" top="2220" width="7890" height="5640">
+   <BOUNDS type="Window" left="14355" top="1380" width="7890" height="5640">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -207,7 +207,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="3" values="0.0044999998062849,0.0044999998062849,-0.0020000000949949">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="3" values="1,1,-1">
+   <PIN pinname="Input 2" visible="1" slicecount="3" values="0.00800000037997961,0.0087500000372529,-0.00600000005215406">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -351,7 +351,7 @@
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="101">
    <BOUNDS type="Node" left="2535" top="3000" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="0.0199999995529652">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0.0377499982714653">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="3" values="0,0,-1">
    </PIN>
@@ -399,7 +399,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.0199999995529652">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.0377499982714653">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="114" systemname="IOBox (String)">
@@ -554,38 +554,36 @@
    </LINK>
    <INFO author="dominikKoller" description="" tags="">
    </INFO>
-   <NODE id="126" systemname="SpaceMouse (Devices VL)" filename="VVVV.Value.TDxInput.vl" nodename="SpaceMouse (Devices VL)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="3000" top="2040" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="330" top="300" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   <PIN pinname="PositionXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="126" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="RotationXYZ" dstnodeid="23" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="PositionXYZ" dstnodeid="24" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="Device Type" dstnodeid="26" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="RotationXYZ" dstnodeid="101" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="Angle" dstnodeid="101" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="Buttons" dstnodeid="107" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="Angle" dstnodeid="113" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="PositionXYZ" dstnodeid="18" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="101" srcpinname="Output" dstnodeid="15" dstpinname="Input 2">
+   </LINK>
+   <NODE id="139" systemname="SpaceMouse (Devices VL)" filename="VVVVV.Devices.SpaceMouse.vl" nodename="SpaceMouse (Devices VLL)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3000" top="1995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="255" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="139" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="RotationXYZ" dstnodeid="23" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="PositionXYZ" dstnodeid="24" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="Device Type" dstnodeid="26" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="RotationXYZ" dstnodeid="101" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="Angle" dstnodeid="101" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="Buttons" dstnodeid="107" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="Angle" dstnodeid="113" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="PositionXYZ" dstnodeid="18" dstpinname="Input 2">
    </LINK>
    </PATCH>

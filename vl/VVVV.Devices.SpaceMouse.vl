@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VLDOCUMENT Version="0.31.1259.0">
+  <DEPENDENCIES>
+    <DEPENDENCY Name="mscorlib.dll.vlimport" Location="mscorlib.dll.vlimport" />
+    <DEPENDENCY Name="SharpDX.dll.vlimport" Location="SharpDX.dll.vlimport" />
+    <DEPENDENCY Name="System.Collections.Immutable.dll.vlimport" Location="System.Collections.Immutable.dll.vlimport" />
+    <DEPENDENCY Name="System.Core.dll.vlimport" Location="System.Core.dll.vlimport" />
+    <DEPENDENCY Name="System.Interactive.dll.vlimport" Location="System.Interactive.dll.vlimport" />
+    <DEPENDENCY Name="System.Reactive.Linq.dll.vlimport" Location="System.Reactive.Linq.dll.vlimport" />
+    <DEPENDENCY Name="System.Windows.Forms.dll.vlimport" Location="System.Windows.Forms.dll.vlimport" />
+    <DEPENDENCY Name="VVVV.Utils.dll.vlimport" Location="VVVV.Utils.dll.vlimport" />
+    <DEPENDENCY Name="VL.Core.dll" Location="VL.Core.dll" />
+    <DEPENDENCY Name="VL.Lib.Basics.dll" Location="VL.Lib.Basics.dll" />
+    <DEPENDENCY Name="Basics.vl" Location="Basics.vl" />
+    <DEPENDENCY Name="VL.Lib.Integration.dll" Location="VL.Lib.Integration.dll" />
+    <DEPENDENCY Name="Integration.vl" Location="Integration.vl" />
+    <DEPENDENCY Name="VL.Devices.SpaceMouse.vl" Location="./VL.Devices.SpaceMouse.vl" />
+  </DEPENDENCIES>
+  <PATCHES>
+    <PATCH Name="SpaceMouse" Category="VVVV.Devices" Version="VL" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <INFO>
+        <SUMMARY>vvvvrapper for the VL Spacemouse Plugin</SUMMARY>
+        <TAGS>Spacemouse,,3DConnexion</TAGS>
+      </INFO>
+      <BODY Name="UtilsBody">
+        <LAYERS>
+          <LAYER Name="Create" />
+          <LAYER Name="Update" />
+        </LAYERS>
+        <INLETS>
+          <INLET Name="Enabled" Layer="Update">
+            <POSITION x="632.1801" y="252.506592" />
+          </INLET>
+        </INLETS>
+        <OUTLETS>
+          <OUTLET Name="Position" Layer="Update">
+            <POSITION x="629.423767" y="349.719757" />
+          </OUTLET>
+          <OUTLET Name="Rotation" Layer="Update">
+            <POSITION x="705.423767" y="349.719757" />
+          </OUTLET>
+          <OUTLET Name="Angle" Layer="Update">
+            <POSITION x="766.423767" y="349.719757" />
+          </OUTLET>
+          <OUTLET Name="Buttons" Layer="Update">
+            <POSITION x="835.423767" y="349.719757" />
+          </OUTLET>
+          <OUTLET Name="Device Type" Layer="Update">
+            <POSITION x="902.42395" y="349.719757" />
+          </OUTLET>
+        </OUTLETS>
+        <CONSTS />
+        <REGIONS />
+        <NODES>
+          <PROCESS Name="SpaceMouse#1">
+            <POSITION x="636.6025" y="284.885559" />
+            <NODEREF LastCat="Devices" LastFile="VL.Devices.SpaceMouse.vl">
+              <PROCESSNODE Name="SpaceMouse" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Enabled" FragmentId="Update" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Position" FragmentId="Update" />
+              <OUPUT Name="Rotation" FragmentId="Update" />
+              <OUPUT Name="Angle" FragmentId="Update" />
+              <OUPUT Name="Keys" FragmentId="Update" />
+              <OUPUT Name="DeviceType" FragmentId="Update" />
+            </OUTPUTS>
+            <FRAGMENTS>
+              <FRAGMENT Name="Create" />
+              <FRAGMENT Name="Update" />
+            </FRAGMENTS>
+          </PROCESS>
+        </NODES>
+        <LINKS>
+          <Link source="Inlets/Enabled" sink="Nodes/SpaceMouse#1/Inputs/Enabled" />
+          <Link source="Nodes/SpaceMouse#1/Outputs/Position" sink="Outlets/Position" />
+          <Link source="Nodes/SpaceMouse#1/Outputs/Rotation" sink="Outlets/Rotation" />
+          <Link source="Nodes/SpaceMouse#1/Outputs/Angle" sink="Outlets/Angle" />
+          <Link source="Nodes/SpaceMouse#1/Outputs/Keys" sink="Outlets/Buttons" />
+          <Link source="Nodes/SpaceMouse#1/Outputs/DeviceType" sink="Outlets/Device Type" />
+        </LINKS>
+      </BODY>
+    </PATCH>
+  </PATCHES>
+  <INFO>
+    <AUTHORS>dominikKoller, vvvv Group</AUTHORS>
+  </INFO>
+</VLDOCUMENT>
