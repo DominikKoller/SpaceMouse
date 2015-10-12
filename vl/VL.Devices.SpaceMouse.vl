@@ -148,9 +148,6 @@
       </BODY>
     </PATCH>
     <PATCH Name="SpaceMouse#1" Category="Devices" IsDatatype="true" IsClosed="true" IsMutable="true">
-      <INFO>
-        <TAGS></TAGS>
-      </INFO>
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="Create" />
@@ -166,68 +163,56 @@
           <INLET Name="Device#6" Layer="Destroy" PadType="Field">
             <POSITION x="1.02716064" y="506.054077" />
           </INLET>
-          <INLET Name="Sensor#2" Layer="Update" PadType="Field">
-            <POSITION x="660.2521" y="249.6987" />
-          </INLET>
-          <INLET Name="Keyboard#2" Layer="Update" PadType="Field">
-            <POSITION x="946.9417" y="230.9134" />
-          </INLET>
           <INLET Name="Device#2" Layer="Update" PadType="Field">
-            <POSITION x="1170.79285" y="-26.3469543" />
+            <POSITION x="607.4873" y="-25.0889359" />
           </INLET>
           <INLET Name="Enabled" Layer="Update">
-            <POSITION x="1441.25635" y="9.894379" />
+            <POSITION x="882.7245" y="8.092682" />
           </INLET>
         </INLETS>
         <OUTLETS>
-          <OUTLET Name="Device" Layer="Create" PadType="Field">
-            <POSITION x="-12.2479858" y="401.83844" />
-          </OUTLET>
-          <OUTLET Name="Keyboard" Layer="Create" PadType="Field">
-            <POSITION x="35.5400848" y="401.83844" />
-          </OUTLET>
-          <OUTLET Name="Sensor" Layer="Create" PadType="Field">
-            <POSITION x="96.1642761" y="401.83844" />
+          <OUTLET Name="Device" Layer="Create" PadType="Field" Type="DeviceClass">
+            <POSITION x="-12.2479858" y="348.45813" />
           </OUTLET>
           <OUTLET Name="Position" Layer="Update">
-            <POSITION x="623.351868" y="658.145447" />
+            <POSITION x="662.1678" y="739.8074" />
           </OUTLET>
           <OUTLET Name="Rotation" Layer="Update">
-            <POSITION x="808.864563" y="658.145447" />
+            <POSITION x="789.587646" y="739.8074" />
           </OUTLET>
           <OUTLET Name="Angle" Layer="Update">
-            <POSITION x="900.696533" y="658.145447" />
+            <POSITION x="875.366" y="739.8074" />
           </OUTLET>
           <OUTLET Name="Keys" Layer="Update">
-            <POSITION x="1040.42639" y="658.145447" />
+            <POSITION x="1036.21069" y="739.8074" />
           </OUTLET>
           <OUTLET Name="DeviceType" Layer="Update">
-            <POSITION x="1295.32813" y="658.145447" />
+            <POSITION x="1289.2981" y="739.8074" />
           </OUTLET>
         </OUTLETS>
         <CONSTS>
           <CONST Name="comment#1" Layer="Update" Type="String">
-            <POSITION x="665.457642" y="724.316345" />
+            <POSITION x="664.381836" y="820.062134" />
             <SIZE width="710.557556" height="13.9780884" />
             <VALUE><![CDATA["However, in the 3DConnexion properties, the 'speed' can be changed for each value independently, so there might be much bigger / smaller values too"]]></VALUE>
           </CONST>
           <CONST Name="comment" Layer="Update" Type="String">
-            <POSITION x="665.457642" y="698.513245" />
+            <POSITION x="664.381836" y="794.259033" />
             <SIZE width="353.2842" height="13.9780884" />
             <VALUE><![CDATA["The values received are usually in the range +/- 4000 (of an arbitrary unit)"]]></VALUE>
           </CONST>
           <CONST Name="comment#2" Layer="Update" Type="String">
-            <POSITION x="663.6929" y="759.8691" />
+            <POSITION x="662.617065" y="855.614868" />
             <SIZE width="296.0674" height="13.9780884" />
             <VALUE><![CDATA["for rotation and translation, 3DConnexion uses arbitrary units."]]></VALUE>
           </CONST>
           <CONST Name="comment#3" Layer="Update" Type="String">
-            <POSITION x="663.6929" y="779.868958" />
+            <POSITION x="662.617065" y="875.614746" />
             <SIZE width="556.2386" height="13.9780884" />
             <VALUE><![CDATA["To read more about how 3DConnexion supplies data, the Documentation in 3DxWare SDK provides useful information"]]></VALUE>
           </CONST>
           <CONST Name="Comment" Layer="Update" Type="String">
-            <POSITION x="-165.571289" y="738.666931" />
+            <POSITION x="-165.571289" y="750.5007" />
             <SIZE width="711.6513" height="10.7563477" />
             <VALUE><![CDATA["We won't always need to Connect in Create - whoever wants that, should do it right after instanciating. In Destroy, we want to Disconnect in every case."]]></VALUE>
           </CONST>
@@ -237,29 +222,29 @@
             <VALUE><![CDATA["This is important, as the Default type (eg in the Split node) sometimes connects without having called connect (weird? yeah.)"]]></VALUE>
           </CONST>
           <CONST Name="comment#5" Layer="Update" Type="String">
-            <POSITION x="536.367737" y="180.588318" />
+            <POSITION x="-162.852478" y="85.76955" />
             <SIZE width="339.8265" height="13.0102539" />
             <VALUE><![CDATA["SpaceMouse (VVVV.Devices) is the vvvvrapper for SpaceMouse (Devices)"]]></VALUE>
           </CONST>
           <CONST Name="comment#4" Layer="Update" Type="String">
-            <POSITION x="536.9838" y="155.671661" />
+            <POSITION x="-162.236389" y="60.85289" />
             <SIZE width="416.667" height="13.0102539" />
             <VALUE><![CDATA["Also, never trust the Is Connected - it might stay true even if the device is disconnected!"]]></VALUE>
           </CONST>
           <CONST Name="comment#6" Layer="Update" Type="String">
-            <POSITION x="536.317566" y="129.389343" />
+            <POSITION x="-162.902649" y="34.57057" />
             <SIZE width="339.8265" height="13.0102539" />
             <VALUE><![CDATA["Therefore, I will pass values, and the device, only when 'Enabled' is true."]]></VALUE>
           </CONST>
           <CONST Name="comment#7" Layer="Update" Type="String">
-            <POSITION x="535.7274" y="105.119064" />
+            <POSITION x="-163.4928" y="10.300293" />
             <SIZE width="476.586273" height="13.0102539" />
             <VALUE><![CDATA["For some reason the device also gives us values when 'Is Connected' is false, after calling Disconnect."]]></VALUE>
           </CONST>
         </CONSTS>
         <REGIONS>
           <REGION Name="IfElse#1" Layer="Update" Kind="IfElse">
-            <POSITION x="620.8992" y="429.811218" />
+            <POSITION x="664.397339" y="474.994476" />
             <SIZE x="1095.737" y="300.095337" />
             <INPUTS>
               <INPUT Name="Condition" />
@@ -283,63 +268,63 @@
                 <LAYER Name="True" />
               </LAYERS>
               <INLETS>
+                <INLET Name="Position" Layer="True">
+                  <POSITION x="665.236755" y="433.7191" />
+                </INLET>
                 <INLET Name="Rotation" Layer="True">
-                  <POSITION x="623.3992" y="431.1894" />
+                  <POSITION x="793.3744" y="433.7191" />
                 </INLET>
                 <INLET Name="Angle" Layer="True">
-                  <POSITION x="690.224243" y="431.1894" />
-                </INLET>
-                <INLET Name="Position" Layer="True">
-                  <POSITION x="791.1572" y="431.1894" />
+                  <POSITION x="879.56366" y="433.7191" />
                 </INLET>
                 <INLET Name="Keys" Layer="True">
-                  <POSITION x="1041.59814" y="431.1894" />
+                  <POSITION x="1041.59814" y="433.7191" />
                 </INLET>
                 <INLET Name="DeviceType" Layer="True">
-                  <POSITION x="1275.5304" y="431.1894" />
+                  <POSITION x="1275.53027" y="433.7191" />
                 </INLET>
                 <INLET Name="Is Connected" Layer="True">
-                  <POSITION x="1387.20886" y="431.1894" />
+                  <POSITION x="1387.20874" y="433.7191" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Position" Layer="True">
-                  <POSITION x="623.351868" y="635.116" />
+                  <POSITION x="665.236755" y="718.7955" />
                 </OUTLET>
                 <OUTLET Name="Rotation" Layer="True">
-                  <POSITION x="808.864563" y="635.116" />
+                  <POSITION x="793.3744" y="718.7955" />
                 </OUTLET>
                 <OUTLET Name="Angle" Layer="True">
-                  <POSITION x="900.696533" y="635.116" />
+                  <POSITION x="879.56366" y="718.7955" />
                 </OUTLET>
                 <OUTLET Name="Keys" Layer="True">
-                  <POSITION x="1040.42639" y="635.116" />
+                  <POSITION x="1041.59814" y="718.7955" />
                 </OUTLET>
                 <OUTLET Name="DeviceType" Layer="True">
-                  <POSITION x="1295.32813" y="635.116" />
+                  <POSITION x="1290.04456" y="718.7955" />
                 </OUTLET>
                 <OUTLET Name="Is Connected" Layer="True">
-                  <POSITION x="1387.20886" y="635.116" />
+                  <POSITION x="1429.84412" y="718.7955" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS>
                 <CONST Name="First Key" Layer="True">
-                  <POSITION x="1201.86377" y="457.2655" />
+                  <POSITION x="1201.86389" y="502.448761" />
                   <SIZE width="40" height="15.50846" />
                   <VALUE><![CDATA[1]]></VALUE>
                 </CONST>
                 <CONST Name="Scalar#1" Layer="True">
-                  <POSITION x="678.000854" y="577.217" />
+                  <POSITION x="678.000854" y="622.4004" />
                   <VALUE><![CDATA[4000.0]]></VALUE>
                 </CONST>
                 <CONST Name="Scalar" Layer="True">
-                  <POSITION x="901.4077" y="572.5094" />
+                  <POSITION x="901.4077" y="617.692749" />
                   <VALUE><![CDATA[4000.0]]></VALUE>
                 </CONST>
               </CONSTS>
               <REGIONS>
                 <REGION Name="ForEachLoop" Layer="True" Kind="ForLoop">
-                  <POSITION x="1029.01245" y="490.704956" />
+                  <POSITION x="1029.01257" y="535.8883" />
                   <SIZE x="80" y="80" />
                   <INPUTS>
                     <INPUT Name="Iteration Count" />
@@ -357,26 +342,26 @@
                     </LAYERS>
                     <INLETS>
                       <INLET Name="IKeyboard" Layer="Update" PadType="Accumulator">
-                        <POSITION x="1031.51245" y="511.615173" />
+                        <POSITION x="1031.51257" y="556.7987" />
                       </INLET>
                       <INLET Name="i" Layer="Update" PadType="Accumulator">
-                        <POSITION x="1153.36157" y="495.545349" />
+                        <POSITION x="1153.36169" y="540.72876" />
                       </INLET>
                     </INLETS>
                     <OUTLETS>
                       <OUTLET Name="IKeyboard" Layer="Update" PadType="Accumulator">
-                        <POSITION x="1033.83545" y="571.0831" />
+                        <POSITION x="1033.83557" y="616.2665" />
                       </OUTLET>
                       <OUTLET Name="Output" Layer="Update">
-                        <POSITION x="1049.34473" y="600.5071" />
+                        <POSITION x="1049.34485" y="645.6904" />
                       </OUTLET>
                       <OUTLET Name="i" Layer="Update" PadType="Accumulator">
-                        <POSITION x="1155.40625" y="598.381042" />
+                        <POSITION x="1155.40637" y="643.564453" />
                       </OUTLET>
                     </OUTLETS>
                     <CONSTS>
                       <CONST Name="one" Layer="Update">
-                        <POSITION x="1171.251" y="539.2962" />
+                        <POSITION x="1171.2511" y="584.4796" />
                         <SIZE width="40" height="15.50846" />
                         <VALUE><![CDATA[1]]></VALUE>
                       </CONST>
@@ -384,7 +369,7 @@
                     <REGIONS />
                     <NODES>
                       <OPERATION Name="IsKeyDown" Layer="Update">
-                        <POSITION x="1066.25024" y="534.4008" />
+                        <POSITION x="1066.25037" y="579.5842" />
                         <NODEREF LastCat="TDx.TDxInput.IKeyboard" LastFile="TDxInput.dll">
                           <CATEGORY Name="IKeyboard" />
                           <OPERATIONNODE Name="IsKeyDown" />
@@ -399,7 +384,7 @@
                         </OUTPUTS>
                       </OPERATION>
                       <OPERATION Name="+" Layer="Update">
-                        <POSITION x="1156.13354" y="571.453735" />
+                        <POSITION x="1156.13367" y="616.6371" />
                         <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
                           <OPERATIONNODE Name="+" />
                           <CATEGORY Name="Adaptive" IsDirectParent="true" />
@@ -429,10 +414,10 @@
               </REGIONS>
               <NODES>
                 <OPERATION Name="Type" Layer="True">
-                  <POSITION x="1272.05286" y="589.839539" />
-                  <NODEREF LastCat="TDx.TDxInput.ISimpleDevice" LastFile="TDxInput.dll">
-                    <CATEGORY Name="ISimpleDevice" />
+                  <POSITION x="1264.36023" y="459.454681" />
+                  <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
                     <OPERATIONNODE Name="Type" />
+                    <CATEGORY Name="DeviceClass" IsDirectParent="true" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Input" />
@@ -443,7 +428,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Keys" Layer="True">
-                  <POSITION x="999.166748" y="453.83667" />
+                  <POSITION x="1001.31146" y="499.019928" />
                   <NODEREF LastCat="TDx.TDxInput.IKeyboard" LastFile="TDxInput.dll">
                     <OPERATIONNODE Name="Keys" />
                     <CATEGORY Name="IKeyboard" IsDirectParent="true" />
@@ -457,7 +442,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="ToVector3" Layer="True">
-                  <POSITION x="670.3091" y="538.8133" />
+                  <POSITION x="670.3091" y="583.9967" />
                   <NODEREF LastCat="TDx.TDxInput.IVector3D" LastFile="VL.Devices.SpaceMouse.vl">
                     <OPERATIONNODE Name="ToVector3" />
                     <CATEGORY Name="IVector3D" IsDirectParent="true" />
@@ -470,7 +455,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Translation" Layer="True">
-                  <POSITION x="672.0665" y="500.194824" />
+                  <POSITION x="672.0665" y="545.3783" />
                   <NODEREF LastCat="TDx.TDxInput.ISensor" LastFile="TDxInput.dll">
                     <OPERATIONNODE Name="Translation" />
                     <CATEGORY Name="ISensor" IsDirectParent="true" />
@@ -484,7 +469,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="/#1" Layer="True">
-                  <POSITION x="669.397339" y="607.555359" />
+                  <POSITION x="669.397339" y="652.7388" />
                   <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
                     <OPERATIONNODE Name="/" Version="Scale" />
                     <CATEGORY Name="Adaptive" IsDirectParent="true" />
@@ -499,7 +484,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="ToVector3#1" Layer="True">
-                  <POSITION x="816.475464" y="541.8566" />
+                  <POSITION x="816.475464" y="587.040039" />
                   <NODEREF LastCat="TDx.TDxInput.IAngleAxis" LastFile="VL.Devices.SpaceMouse.vl">
                     <OPERATIONNODE Name="ToVector3" />
                     <CATEGORY Name="IAngleAxis" IsDirectParent="true" />
@@ -513,7 +498,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Rotation" Layer="True">
-                  <POSITION x="798.8954" y="498.3017" />
+                  <POSITION x="798.8954" y="543.4851" />
                   <NODEREF LastCat="TDx.TDxInput.ISensor" LastFile="TDxInput.dll">
                     <OPERATIONNODE Name="Rotation" />
                     <CATEGORY Name="ISensor" IsDirectParent="true" />
@@ -527,7 +512,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="/" Layer="True">
-                  <POSITION x="883.522" y="601.299133" />
+                  <POSITION x="883.522" y="646.482544" />
                   <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
                     <OPERATIONNODE Name="/" Version="Scale" />
                     <CATEGORY Name="Adaptive" IsDirectParent="true" />
@@ -542,10 +527,10 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="IsConnected" Layer="True">
-                  <POSITION x="1379.32178" y="596.149231" />
-                  <NODEREF LastCat="TDx.TDxInput.ISimpleDevice" LastFile="TDxInput.dll">
+                  <POSITION x="1365.7511" y="459.454681" />
+                  <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
                     <OPERATIONNODE Name="IsConnected" />
-                    <CATEGORY Name="ISimpleDevice" IsDirectParent="true" />
+                    <CATEGORY Name="DeviceClass" IsDirectParent="true" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Input" />
@@ -578,7 +563,7 @@
             </BODY>
           </REGION>
           <REGION Name="IfElse#3" Layer="Update" Kind="IfElse">
-            <POSITION x="1174.6781" y="76.08136" />
+            <POSITION x="678.386" y="74.27966" />
             <SIZE x="84.28339" y="76.80661" />
             <INPUTS>
               <INPUT Name="Condition" />
@@ -593,18 +578,18 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Device" Layer="True">
-                  <POSITION x="1268.81763" y="77.45953" />
+                  <POSITION x="710.285767" y="75.65784" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Device" Layer="True">
-                  <POSITION x="1268.81763" y="350.766022" />
+                  <POSITION x="710.285767" y="348.964325" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
               <REGIONS>
                 <REGION Name="IfElse#1" Layer="True" Kind="IfElse">
-                  <POSITION x="1308.18274" y="177.0344" />
+                  <POSITION x="749.6509" y="175.2327" />
                   <SIZE x="80" y="80" />
                   <INPUTS>
                     <INPUT Name="Condition" />
@@ -619,19 +604,19 @@
                     </LAYERS>
                     <INLETS>
                       <INLET Name="SpaceMouse" Layer="True">
-                        <POSITION x="1311.92078" y="178.412567" />
+                        <POSITION x="753.3889" y="176.61087" />
                       </INLET>
                     </INLETS>
                     <OUTLETS>
                       <OUTLET Name="SpaceMouse" Layer="True">
-                        <POSITION x="1311.92078" y="305.034546" />
+                        <POSITION x="753.3889" y="303.232849" />
                       </OUTLET>
                     </OUTLETS>
                     <CONSTS />
                     <REGIONS />
                     <NODES>
                       <OPERATION Name="NOT" Layer="True">
-                        <POSITION x="1382.476" y="238.0213" />
+                        <POSITION x="823.9441" y="236.2196" />
                         <NODEREF LastCat="Control.Boolean" LastFile="VL.Lib.Basics.dll">
                           <OPERATIONNODE Name="NOT" />
                         </NODEREF>
@@ -644,10 +629,10 @@
                         </OUTPUTS>
                       </OPERATION>
                       <OPERATION Name="Connect" Layer="True">
-                        <POSITION x="1313.18274" y="209.15271" />
-                        <NODEREF LastCat="TDx.TDxInput.ISimpleDevice" LastFile="TDxInput.dll">
+                        <POSITION x="754.6509" y="207.351013" />
+                        <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
                           <OPERATIONNODE Name="Connect" />
-                          <CATEGORY Name="ISimpleDevice" IsDirectParent="true" />
+                          <CATEGORY Name="DeviceClass" IsDirectParent="true" />
                         </NODEREF>
                         <INPUTS>
                           <INPUT Name="Input" />
@@ -658,10 +643,10 @@
                         </OUTPUTS>
                       </OPERATION>
                       <OPERATION Name="Disconnect" Layer="True">
-                        <POSITION x="1313.79114" y="261.014771" />
-                        <NODEREF LastCat="TDx.TDxInput.ISimpleDevice" LastFile="TDxInput.dll">
+                        <POSITION x="755.2593" y="259.213074" />
+                        <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
                           <OPERATIONNODE Name="Disconnect" />
-                          <CATEGORY Name="ISimpleDevice" IsDirectParent="true" />
+                          <CATEGORY Name="DeviceClass" IsDirectParent="true" />
                         </NODEREF>
                         <INPUTS>
                           <INPUT Name="Input" />
@@ -683,10 +668,10 @@
               </REGIONS>
               <NODES>
                 <OPERATION Name="IsConnected" Layer="True">
-                  <POSITION x="1245.00073" y="99.57913" />
-                  <NODEREF LastCat="TDx.TDxInput.ISimpleDevice" LastFile="TDxInput.dll">
+                  <POSITION x="686.8029" y="101.7442" />
+                  <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
                     <OPERATIONNODE Name="IsConnected" />
-                    <CATEGORY Name="ISimpleDevice" IsDirectParent="true" />
+                    <CATEGORY Name="DeviceClass" IsDirectParent="true" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Input" />
@@ -697,7 +682,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="!=" Layer="True">
-                  <POSITION x="1305.5094" y="130.11351" />
+                  <POSITION x="746.977539" y="128.311813" />
                   <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
                     <OPERATIONNODE Name="!=" />
                     <CATEGORY Name="Adaptive" IsDirectParent="true" />
@@ -715,8 +700,8 @@
                 <Link source="Nodes/IsConnected/Outputs/Is Connected" sink="Nodes/!=/Inputs/Input" />
                 <Link source="Nodes/!=/Outputs/Result" sink="Regions/IfElse#1/Inputs/Condition" />
                 <Link source="Nodes/IsConnected/Outputs/Output" sink="Regions/IfElse#1/Inputs/SpaceMouse Default" />
-                <Link source="Regions/IfElse#1/Outputs/SpaceMouse" sink="Outlets/Device" />
                 <Link source="Inlets/Device" sink="Nodes/IsConnected/Inputs/Input" />
+                <Link source="Regions/IfElse#1/Outputs/SpaceMouse" sink="Outlets/Device" />
               </LINKS>
             </BODY>
           </REGION>
@@ -797,102 +782,8 @@
               <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="Sensor" Layer="Create">
-            <POSITION x="-9.439293" y="337.376526" />
-            <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
-              <OPERATIONNODE Name="Sensor" />
-              <CATEGORY Name="DeviceClass" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-              <OUPUT Name="Sensor" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Keyboard" Layer="Create">
-            <POSITION x="-9.439293" y="370.478149" />
-            <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
-              <CATEGORY Name="DeviceClass" />
-              <OPERATIONNODE Name="Keyboard" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-              <OUPUT Name="Keyboard" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="IsAssigned" Layer="Update">
-            <POSITION x="662.599854" y="307.285248" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="IsAssigned" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="X" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="IsAssigned#1" Layer="Update">
-            <POSITION x="948.1485" y="294.299957" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="IsAssigned" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="X" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ShareInstance#1" Layer="Update">
-            <POSITION x="662.6045" y="283.1084" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Instance" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output 1" />
-              <OUPUT Name="Output 2" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ShareInstance#3" Layer="Update">
-            <POSITION x="948.046448" y="269.760834" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Instance" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output 1" />
-              <OUPUT Name="Output 2" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="AND" Layer="Update">
-            <POSITION x="656.629639" y="351.1933" />
-            <NODEREF LastCat="Control.Boolean" LastFile="Builtin">
-              <OPERATIONNODE Name="AND" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-              <INPUT Name="Input 3" />
-              <INPUT Name="Input 4" />
-              <INPUT Name="Enabled" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="ShareInstance#5" Layer="Update">
-            <POSITION x="1170.89929" y="14.0480652" />
+            <POSITION x="612.367432" y="12.2463684" />
             <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
               <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
             </NODEREF>
@@ -905,7 +796,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="IsAssigned#5" Layer="Update">
-            <POSITION x="1170.899" y="43.27536" />
+            <POSITION x="611.9944" y="41.38114" />
             <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
               <OPERATIONNODE Name="IsAssigned" />
             </NODEREF>
@@ -942,7 +833,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="AND#1" Layer="Update">
-            <POSITION x="660.363831" y="398.9957" />
+            <POSITION x="615.907166" y="393.5805" />
             <NODEREF LastCat="Control.Boolean" LastFile="Builtin">
               <OPERATIONNODE Name="AND" />
             </NODEREF>
@@ -956,57 +847,66 @@
               <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
+          <OPERATION Name="Sensor#1" Layer="Update">
+            <POSITION x="671.4069" y="459.454681" />
+            <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
+              <OPERATIONNODE Name="Sensor" />
+              <CATEGORY Name="DeviceClass" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+              <OUPUT Name="Sensor" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Keyboard#1" Layer="Update">
+            <POSITION x="999.6309" y="459.454681" />
+            <NODEREF LastCat="TDx.TDxInput.DeviceClass" LastFile="TDxInput.dll">
+              <OPERATIONNODE Name="Keyboard" />
+              <CATEGORY Name="DeviceClass" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+              <OUPUT Name="Keyboard" />
+            </OUTPUTS>
+          </OPERATION>
         </NODES>
         <LINKS>
-          <Link source="Nodes/Sensor/Outputs/Sensor" sink="Outlets/Sensor" />
-          <Link source="Nodes/Create/Outputs/Output" sink="Nodes/Sensor/Inputs/Input" />
-          <Link source="Nodes/Keyboard/Outputs/Keyboard" sink="Outlets/Keyboard" />
-          <Link source="Nodes/Keyboard/Outputs/Output" sink="Outlets/Device" />
           <Link source="Regions/IfElse#1/Outputs/DeviceType" sink="Outlets/DeviceType" />
           <Link source="Regions/IfElse#1/Outputs/Keys" sink="Outlets/Keys" />
           <Link source="Regions/IfElse#1/Outputs/Position" sink="Outlets/Position" />
           <Link source="Regions/IfElse#1/Outputs/Rotation" sink="Outlets/Rotation" />
-          <Link source="Nodes/ShareInstance#3/Outputs/Output 2" sink="Regions/IfElse#1/IfElseBody/Nodes/Keys/Inputs/Input" />
-          <Link source="Nodes/ShareInstance#3/Outputs/Output 1" sink="Nodes/IsAssigned#1/Inputs/X" />
-          <Link source="Nodes/ShareInstance#1/Outputs/Output 1" sink="Nodes/IsAssigned/Inputs/X" />
-          <Link source="Nodes/IsAssigned/Outputs/Result" sink="Nodes/AND/Inputs/Input" />
           <Link source="Inlets/Device#2" sink="Nodes/ShareInstance#5/Inputs/Instance" />
-          <Link source="Nodes/ShareInstance#5/Outputs/Output 1" sink="Nodes/IsAssigned#5/Inputs/X" />
           <Link source="Nodes/IsAssigned#5/Outputs/Result" sink="Regions/IfElse#3/Inputs/Condition" />
           <Link source="Inlets/Device#6" sink="Nodes/ShareInstance#6/Inputs/Instance" />
           <Link source="Nodes/IsAssigned#6/Outputs/Result" sink="Regions/IfElse#4/Inputs/Condition" />
           <Link source="Nodes/ShareInstance#6/Outputs/Output 1" sink="Nodes/IsAssigned#6/Inputs/X" />
           <Link source="Nodes/ShareInstance#6/Outputs/Output 2" sink="Regions/IfElse#4/Inputs/ISimpleDevice Default" />
           <Link source="Regions/IfElse#1/Outputs/Angle" sink="Outlets/Angle" />
-          <Link source="Nodes/ShareInstance#1/Outputs/Output 2" sink="Regions/IfElse#1/IfElseBody/Nodes/Translation/Inputs/Input" />
-          <Link source="Nodes/Sensor/Outputs/Output" sink="Nodes/Keyboard/Inputs/Input" />
           <Link source="Inlets/Enabled" sink="Regions/IfElse#3/IfElseBody/Nodes/!=/Inputs/Input 2" />
           <Link source="Inlets/Enabled" sink="Regions/IfElse#3/IfElseBody/Regions/IfElse#1/IfElseBody/Nodes/Connect/Inputs/Enabled" />
           <Link source="Inlets/Enabled" sink="Regions/IfElse#3/IfElseBody/Regions/IfElse#1/IfElseBody/Nodes/NOT/Inputs/Input" />
           <Link source="Nodes/ShareInstance#5/Outputs/Output 2" sink="Regions/IfElse#3/Inputs/Device Default" />
-          <Link source="Inlets/Sensor#2" sink="Nodes/ShareInstance#1/Inputs/Instance" />
-          <Link source="Inlets/Keyboard#2" sink="Nodes/ShareInstance#3/Inputs/Instance" />
-          <Link source="Regions/IfElse#3/Outputs/Device" sink="Regions/IfElse#1/IfElseBody/Nodes/Type/Inputs/Input" />
-          <Link source="Nodes/AND/Outputs/Output" sink="Nodes/AND#1/Inputs/Input" />
           <Link source="Nodes/AND#1/Outputs/Output" sink="Regions/IfElse#1/Inputs/Condition" />
+          <Link source="Nodes/Sensor#1/Outputs/Output" sink="Nodes/Keyboard#1/Inputs/Input" />
+          <Link source="Nodes/Keyboard#1/Outputs/Output" sink="Regions/IfElse#1/IfElseBody/Nodes/Type/Inputs/Input" />
+          <Link source="Nodes/ShareInstance#5/Outputs/Output 1" sink="Nodes/IsAssigned#5/Inputs/X" />
+          <Link source="Regions/IfElse#3/Outputs/Device" sink="Nodes/Sensor#1/Inputs/Input" />
+          <Link source="Nodes/Sensor#1/Outputs/Sensor" sink="Regions/IfElse#1/IfElseBody/Nodes/Translation/Inputs/Input" />
+          <Link source="Nodes/Keyboard#1/Outputs/Keyboard" sink="Regions/IfElse#1/IfElseBody/Nodes/Keys/Inputs/Input" />
+          <Link source="Nodes/IsAssigned#5/Outputs/Result" sink="Nodes/AND#1/Inputs/Input" />
           <Link source="Inlets/Enabled" sink="Nodes/AND#1/Inputs/Input 2">
             <SEGMENTS>
-              <Point x="-4.11010742" y="362.585846" />
-              <Point x="-768.5043" y="371.272156" />
+              <Point x="-2.44104" y="367.9683" />
+              <Point x="-255.754639" y="374.24234" />
             </SEGMENTS>
           </Link>
-          <Link source="Nodes/IsAssigned#5/Outputs/Result" sink="Nodes/AND/Inputs/Input 3">
-            <SEGMENTS>
-              <Point x="-19.3480225" y="267.1069" />
-              <Point x="-483.341" y="282.307922" />
-            </SEGMENTS>
-          </Link>
-          <Link source="Nodes/IsAssigned#1/Outputs/Result" sink="Nodes/AND/Inputs/Input 2">
-            <SEGMENTS>
-              <Point x="-0.00152587891" y="13.1868591" />
-              <Point x="-275.067566" y="24.0447388" />
-            </SEGMENTS>
-          </Link>
+          <Link source="Nodes/Create/Outputs/Output" sink="Outlets/Device" />
         </LINKS>
       </BODY>
     </PATCH>
